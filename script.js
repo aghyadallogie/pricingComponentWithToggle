@@ -32,13 +32,13 @@ const plans = [
 
 checkswitch.addEventListener('click', () => {
     if (!checkswitch.checked) {
-        basicPrice.innerHTML = plans[0].annual_price;
-        profPrice.innerHTML = plans[1].annual_price;
-        masterPrice.innerHTML = plans[2].annual_price;
+        basicPrice.innerHTML = `<span>&dollar;</span>${plans[0].annual_price}`;
+        profPrice.innerHTML = `<span>&dollar;</span>${plans[1].annual_price}`;
+        masterPrice.innerHTML = `<span>&dollar;</span>${plans[2].annual_price}`;
     } else {
-        basicPrice.innerHTML = plans[0].monthly_price;
-        profPrice.innerHTML = plans[1].monthly_price;
-        masterPrice.innerHTML = plans[2].monthly_price;
+        basicPrice.innerHTML = `<span>&dollar;</span>${plans[0].monthly_price}`;
+        profPrice.innerHTML = `<span>&dollar;</span>${plans[1].monthly_price}`;
+        masterPrice.innerHTML = `<span>&dollar;</span>${plans[2].monthly_price}`;
     }
 
 })
